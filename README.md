@@ -142,3 +142,4 @@ Este principio sugere trocar a direcao desta dependencia
 
 # designPatter2024
 # designPatter2024
+# designPatter2024
