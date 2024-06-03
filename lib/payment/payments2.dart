@@ -1,35 +1,42 @@
+abstract interface class PaymentExecute {
+  void withPayment(double amount);
+}
 
-abstract interface class PaymentProcess {
-  String processPayment(double amount);
-}
-class CreditCardProcessor implements PaymentProcess {
+class Money implements PaymentExecute {
   @override
-  String processPayment(double amount) {
-    return "Credit card payment of $amount";
+  void withPayment(double amount) {
+   print("You payed $amount with money");
   }
 }
-class PayPalProcessor implements PaymentProcess {
+class CreditCard implements PaymentExecute {
   @override
-  String processPayment(double amount) {
-    return "PayPal payment of $amount";
+  void withPayment(double amount) {
+   print("You payed $amount with credit card");
   }
 }
-class BankTransferProcessor implements PaymentProcess {
+class DebitCard implements PaymentExecute {
   @override
-  String processPayment(double amount) {
-    return "BankTransfer payment of $amount";
+  void withPayment(double amount) {
+   print("You payed $amount with debit card");
+  }
+}
+class Pix implements PaymentExecute {
+  @override
+  void withPayment(double amount) {
+   print("You payed $amount with pix");
   }
 }
 
 class AbstractFactoryExecutePayment {
-   void call(PaymentProcess paymentProcess, double amount) {
-    print(paymentProcess.processPayment(amount));
+   void call(PaymentExecute paymentExecute, double amount) {
+    paymentExecute.withPayment(amount);
   }
 }
 
 main() {
-  final paymentProcess = AbstractFactoryExecutePayment();
-  paymentProcess(CreditCardProcessor(), 100.0);
-  paymentProcess(PayPalProcessor(), 200.0);
-  paymentProcess(BankTransferProcessor(), 300.0);
+  final paymentExecute = AbstractFactoryExecutePayment();
+  paymentExecute(Money(), 100.0);
+  paymentExecute(CreditCard(), 200.0);
+  paymentExecute(DebitCard(), 300.0);
+  paymentExecute(Pix(), 400.0);
 }

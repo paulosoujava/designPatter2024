@@ -1,0 +1,40 @@
+Os padroes criacionais fornecem varios
+mecanismos de criacao de objetos
+que aumentam a flexibilidade e
+reutilizao de codigos ja existentes
+
+
+----------------------------------------------
+Factory Method
+----------------------------------------------
+Fornece uma interface para criar
+objetos em uma suerclasse!
+ Permite que as subclasses alterem o tipo
+de objeto que serao criados
+
+----------------------------------------------
+Abstract Factory
+----------------------------------------------
+Permite que voce produza familias de objetos relacionados
+sem ter que especificar suas classes concretas
+
+----------------------------------------------
+Builder
+----------------------------------------------
+Permit construir objetos complexos passo a passo
+O padrao permite produzir diferentes tipos e
+representacoes de um objeto usando o mesmo
+codigo de construcao
+
+----------------------------------------------
+Prototype
+----------------------------------------------
+Permite que vc copie objetos existentes sem
+fazer seu codigo ficar dependente de sias clases
+
+----------------------------------------------
+Singleton
+----------------------------------------------
+Permite a vc garantir que uma classse tem apenaas
+uma instancia enquanto prove um ponte de acesso global
+para esta instancia
