@@ -140,7 +140,52 @@ Este principio sugere trocar a direcao desta dependencia
 
 
 
-# designPatter2024
-# designPatter2024
-# designPatter2024
-# designPatter2024
+Agregação: Imagine um sanduíche. Ele é feito de vários ingredientes diferentes, como pão, alface, queijo e carne. Cada ingrediente pode existir separadamente e ser parte de outros sanduíches. Mas juntos, formam um sanduíche delicioso!
+
+Composição: Agora, pense em um carro. Ele é feito de várias partes, como motor, rodas, volante e assentos. Essas partes não fazem muito sentido sozinhas, mas quando estão todas juntas, você tem um carro que pode te levar para onde você quiser!
+
+Herança: Vamos falar sobre famílias. Seu avô e seu pai são parte da mesma família, certo? Seu pai pode ter características semelhantes ao seu avô, como cor dos olhos ou forma do nariz. Herança na programação é como isso, onde uma classe pode herdar características e comportamentos de outra classe, como um "pai" passando características para um "filho".
+
+Polimorfismo: Imagine um controle remoto. Ele pode controlar diferentes dispositivos, como uma TV, um DVD player ou um sistema de som. Mesmo botões que fazem coisas diferentes em cada dispositivo, como o botão "play", funcionam de maneira diferente dependendo do que você está controlando. Isso é polimorfismo, onde coisas diferentes podem ser tratadas da mesma maneira, mas executam comportamentos diferentes.
+
+Interface: Pense em um manual de instruções. Ele diz o que você pode fazer com um objeto, mas não como fazê-lo. Interfaces na programação são como isso, elas definem o que uma classe deve fazer, mas não como ela faz. É como uma promessa de que uma classe vai ter certos comportamentos.
+
+Classe Abstrata: Vamos imaginar uma casa. Ela tem paredes, portas, janelas e telhado. Mas você não pode realmente viver em uma casa sem um plano, certo? Uma classe abstrata é como esse plano, ela define o que uma casa deve ter, mas você não pode realmente construir uma casa baseada apenas nela. Ela precisa ser estendida e implementada em classes concretas para se tornar útil.
+
+
+#Padrões de Projeto (Design Patterns - GoF)
+Por Otávio Miranda
+Curso: https://www.youtube.com/playlist?list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H
+
+Resoluções em Dart
+Singleton aula 4
+https://www.youtube.com/watch?v=x9h8MgAvi_I&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=4
+Intenção Oficial
+ Garantir que uma classe tenha somente um instância no programa e fornecer um ponto 
+ de acesso global para a mesma.
+
+Aplicabilidade
+Use-o quando uma classe precisa ter somente uma instância disponível em todo o seu programa
+Use o quando precerer que está usando variáveis globais para manter partes importantes do 
+programa, como variáveis de configuração que são usadas por toda a aplicação
+
+Bom
+Acesso controlado a instancia unica
+É fcil permitir um número maiord de instancias caso mude de ideia
+Usa o Lazy instantiation, o Singleton só é criado no momento do uso
+Substitui variaveis globasi
+
+Ruim
+É mais dificil de testar
+Vioal o principio da responsabilidade unica
+Requer tratamento especial em casos de ocorrencia
+Erich Gama (autor) descreveu que este seria o unico padrão que ele 
+removeria se fosse refatorar o livro
+
+Aula 5 (Singleton)
+https://www.youtube.com/watch?v=JnCWTbICOWg&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=5
+source code:
+lib/creacionais/singleton/db/my_db.dart
+
+Builder
+https://www.youtube.com/watch?v=2VwLvwsIu-8&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=6
