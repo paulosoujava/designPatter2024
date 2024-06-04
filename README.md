@@ -189,3 +189,24 @@ lib/creacionais/singleton/db/my_db.dart
 
 Builder
 https://www.youtube.com/watch?v=2VwLvwsIu-8&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=6
+Intenção Oficial
+Separar a construção de um objeto complexo
+da sua representação de modo que o mesmo processo de construção
+possa criar diferentes representações
+
+Bom
+Separa criacao da utilizacao
+O cliente nao precisa criar objetos diretamente
+O mesmo codigo pode construir objetos diferentes
+Ajuda na aplicacao do principios SRP e OCP
+
+Ruim
+O codigo final pode se tornar muito complexo
+
+source code:
+lib/creacionais/builder/builder.dart
+lib/creacionais/builder/builder2.dart
+
+
+Prototype
+https://www.youtube.com/watch?v=Z-_smcjkdwM&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=8
